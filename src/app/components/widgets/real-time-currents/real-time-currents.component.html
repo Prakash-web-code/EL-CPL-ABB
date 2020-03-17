@@ -1,0 +1,47 @@
+<!-- <mat-card fxFlex class="dashboard-card scrollable-content">
+    <mat-card-title>
+        <span fxLayoutAlign="start center">{{ widgetDetails.title }}</span>
+    </mat-card-title>
+    <mat-card-content>
+        <elcp-table [columns]='columns' [dataSource]='dataSource'></elcp-table>
+    </mat-card-content>
+</mat-card> -->
+
+<mat-card fxFlex.sm="100%" fxFlex.sm="100%" fxFlex.xs="100%" class="real-time-container">
+  <mat-card-title>
+    <div class="header-title">
+      <span class="abb-title">
+        <img _ngcontent-ng-cli-universal-c1="" class="nav-icons"
+          src="/assets/ABB UI Icon Package/SVG/move-icon.svg">
+        {{ widgetDetails.title }}</span>
+      <span class="vertical-menu">
+        <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+          <mat-icon>more_vert</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item>
+            <mat-icon>dialpad</mat-icon>
+            <span>Redial</span>
+          </button> 
+        </mat-menu>
+      </span>
+    </div>
+  </mat-card-title>
+  <mat-card-content>
+    <div class="">Device</div>
+<div fxLayout='row' fxLayoutGap='5px'>
+  <div fxLayoutAlign="start center"  fxFlex="50%">
+    <elcp-dynamic-search-dropdown  [dropdownData]="exampleData"></elcp-dynamic-search-dropdown>
+  </div>
+  <div  fxLayoutAlign="end center"  fxFlex="50%" >
+    <mat-button-toggle-group name="fontStyle" aria-label="Font Style" class="float-right" value="All">
+    <mat-button-toggle value="All">All</mat-button-toggle>
+    <mat-button-toggle value="Favorites">Favorites</mat-button-toggle>
+  </mat-button-toggle-group>
+  </div>
+</div>
+
+    <elcp-table [columns]='columns' [dataSource]='dataSource'></elcp-table>
+  </mat-card-content>
+  <mat-paginator  [pageSizeOptions]="[1, 2, 6]"></mat-paginator>
+</mat-card>

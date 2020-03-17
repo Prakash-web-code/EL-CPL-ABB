@@ -1,0 +1,17 @@
+// .select2-choices {
+//     position: relative;
+//   }
+//   ::ngdeep.ui-select-multiple input.ui-select-search {
+//     width: 100% !important;
+//     position: absolute;
+//   }
+//   .ui-select-choices {
+//     position: fixed;
+//     top: auto;
+//     left: auto;
+//     width: 300;
+//   }
+.ng-dropdown-panel{
+    width:auto !important;
+}
+ng-select2 { .ng-dropdown-panel { width: auto !important; max-width: 550px; } }

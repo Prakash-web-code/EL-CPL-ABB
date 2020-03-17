@@ -1,0 +1,72 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+@import '../src/app/components/widgets/real-time-currents/real-time-currents.component.scss';
+@import '../src/app/components/widgets/energy-cost/energy-cost.component.scss';
+@import '../src/app/components/widgets/real-time-power/real-time-power.component.scss';
+@import '../src/app/components/widgets/real-time-voltage/real-time-voltage.component.scss';
+
+@import 'variables';
+
+@font-face {
+  font-family: 'ABBvoice';
+  src: url('../src/app/components/styles/fonts/ABBvoice_Lt/ABBvoice_Bd.ttf') format('truetype'),
+       url('../src/app/components/styles/fonts/ABBvoice_Lt//ABBvoice_Lt.ttf') format('truetype'),
+       url('../src/app/components/styles/fonts/ABBvoice_Lt//ABBvoice_Md.ttf') format('truetype'),
+       url('../src/app/components/styles/fonts/ABBvoice_Lt//ABBvoice_Rg.ttf') format('truetype')
+}
+
+html,
+body {
+font-family: 'ABBvoice',sans-serif;
+background-color : lightgray;
+font-size: 16px;
+}
+* {
+  font-family: 'ABBvoice',sans-serif !important;
+}
+
+html,
+body {
+font-family: 'ABBvoice',sans-serif;
+background-color : $background-color;
+margin: 0;
+padding: 0;
+font-size: 16px;
+height: 100vh;
+}
+* {
+    font-family: 'ABBvoice',sans-serif !important;
+  }
+
+
+// a {
+//   color: $anchor-color;
+// }
+
+code {
+  color: #e01a76;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+
+
+.overflow-ellipsis {
+  // overflow: hidden;
+  text-overflow: ellipsis;
+  // white-space: nowrap;
+}
+
+.material-icons {
+  font-family: 'Material Icons' !important;
+}
+
+.real-time-container {
+  height: 496px !important;
+}

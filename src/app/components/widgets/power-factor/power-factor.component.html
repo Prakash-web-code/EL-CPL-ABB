@@ -1,0 +1,55 @@
+<mat-card style="height: 500px;width: 500px;">
+        <mat-card-title>
+                <div class="header-title">
+                  <span class="abb-title">
+                    <img
+                      _ngcontent-ng-cli-universal-c1=""
+                      class="nav-icons"
+                      src="/assets/ABB UI Icon Package/SVG/move-icon.svg"
+                    />
+                    {{ widgetDetails.title }}
+                  </span>
+                  <span class="vertical-menu">
+                    <button
+                      style="float:right;"
+                      mat-icon-button
+                      [matMenuTriggerFor]="menu"
+                      aria-label="Example icon-button with a menu"
+                    >
+                      <mat-icon>more_vert</mat-icon>
+                    </button>
+                    <mat-menu #menu="matMenu">
+                      <button mat-menu-item>
+                        <mat-icon>dialpad</mat-icon>
+                        <span>Redial</span>
+                      </button>
+                    </mat-menu>
+                  </span>
+                </div>
+              </mat-card-title>
+    <mat-card-content>
+            <div class="flex-contianer" fxLayout="row" fxLayoutAlign="start" fxLayoutGap="10px" style="margin-top: 15px;">
+                    <div class="flex-container drop-down" fxLayout="column" fxLayoutGap="5px" style="width: 30%;">
+                        <div>Device</div>
+                            
+                            <select>
+                                <option *ngFor="let option of options"> {{option.viewValue}} </option>
+                              </select>
+                    </div>
+                    <div class="flex-container drop-down" fxLayout="column" fxLayoutGap="5px" style="width: 30%;">
+                        <div>Period</div>
+                        
+                        <select>
+                            <option *ngFor="let option of options"> {{option.viewValue}} </option>
+                          </select>
+                </div>
+                </div>
+      <div class="flex-container center-text" fxLayout="column" fxLayoutAlign="center center" fxFlexGrow>
+    <div class="day" > {{mainData.day}} </div>
+    <div class="number"> {{mainData.number}} </div>
+    <div class="sub-header"> {{mainData.property}} </div>
+
+      </div>
+
+    </mat-card-content>
+</mat-card>

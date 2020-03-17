@@ -1,0 +1,103 @@
+// Mixin styles for usage
+@import "font-colors";
+
+@mixin common-font(
+  $colorValue,
+  $fontFamily,
+  $fontSize,
+  $fontWeight,
+  $fontStretch,
+  $fontStyle,
+  $letterSpacing
+) {
+  color: $colorValue;
+  font-family: $fontFamily, sans-serif;
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+  font-stretch: $fontStretch;
+  font-style: $fontStyle;
+  letter-spacing: $letterSpacing;
+}
+
+
+@mixin abb-title {
+  @include common-font(
+    $black1,
+    ABBvoice,
+    16px,
+    normal,
+    normal,
+    normal,
+    normal
+  );
+}
+@mixin abb-select-title {
+  @include common-font(
+    $black1,
+    ABBvoice,
+    11px,
+    normal,
+    normal,
+    normal,
+    normal
+  );
+}
+@mixin abb-options-selected {
+  @include common-font(
+    $gray2,
+    ABBvoice,
+    12px,
+    normal,
+    normal,
+    normal,
+    normal
+  );
+}
+@mixin abb-table-header {
+  @include common-font(
+    $gray1,
+    ABBvoice,
+    14px,
+    normal,
+    normal,
+    normal,
+    normal
+  );
+}
+@mixin abb-all-btn {
+  @include common-font(
+    $blue1,
+    ABBvoice,
+    12px,
+    normal,
+    normal,
+    normal,
+    normal
+  );
+}
+@mixin abb-all-favorite {
+  @include common-font(
+    null,
+    ABBvoice,
+    12px,
+    normal,
+    normal,
+    normal,
+    normal
+  );
+}
+@mixin abb-table-body {
+  @include common-font(
+    $black1,
+    ABBvoice,
+    13px,
+    normal,
+    normal,
+    normal,
+    normal
+  );
+}
+
+
+
+

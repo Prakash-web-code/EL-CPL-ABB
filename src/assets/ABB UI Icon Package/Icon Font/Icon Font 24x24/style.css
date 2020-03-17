@@ -1,0 +1,987 @@
+@font-face {
+  font-family: 'ABB-UI-Icons-24x24';
+  src:  url('fonts/ABB-UI-Icons-24x24.eot?e0b1mp');
+  src:  url('fonts/ABB-UI-Icons-24x24.eot?e0b1mp#iefix') format('embedded-opentype'),
+    url('fonts/ABB-UI-Icons-24x24.woff2?e0b1mp') format('woff2'),
+    url('fonts/ABB-UI-Icons-24x24.ttf?e0b1mp') format('truetype'),
+    url('fonts/ABB-UI-Icons-24x24.woff?e0b1mp') format('woff'),
+    url('fonts/ABB-UI-Icons-24x24.svg?e0b1mp#ABB-UI-Icons-24x24') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.icon_abb_24 {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'ABB-UI-Icons-24x24' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-abb_add-user_24:before {
+  content: "\e900";
+}
+.icon-abb_alarm-bell_24:before {
+  content: "\e901";
+}
+.icon-abb_align-bottom_24:before {
+  content: "\e902";
+}
+.icon-abb_align-horizontal-center_24:before {
+  content: "\e903";
+}
+.icon-abb_align-left_24:before {
+  content: "\e904";
+}
+.icon-abb_align-right_24:before {
+  content: "\e905";
+}
+.icon-abb_align-top_24:before {
+  content: "\e906";
+}
+.icon-abb_align-vertical-center_24:before {
+  content: "\e907";
+}
+.icon-abb_analyze-document_24:before {
+  content: "\e908";
+}
+.icon-abb_anchor_24:before {
+  content: "\e909";
+}
+.icon-abb_audio-off_24:before {
+  content: "\e90a";
+}
+.icon-abb_audio-on_24:before {
+  content: "\e90b";
+}
+.icon-abb_background_24:before {
+  content: "\e90c";
+}
+.icon-abb_bar-chart_24:before {
+  content: "\e90d";
+}
+.icon-abb_battery-charging_24:before {
+  content: "\e90e";
+}
+.icon-abb_battery-empty_24:before {
+  content: "\e90f";
+}
+.icon-abb_battery-full_24:before {
+  content: "\e910";
+}
+.icon-abb_battery-half_24:before {
+  content: "\e911";
+}
+.icon-abb_battery-high_24:before {
+  content: "\e912";
+}
+.icon-abb_battery-low_24:before {
+  content: "\e913";
+}
+.icon-abb_binary-data_24:before {
+  content: "\e914";
+}
+.icon-abb_bluetooth_24:before {
+  content: "\e915";
+}
+.icon-abb_boolean_24:before {
+  content: "\e916";
+}
+.icon-abb_briefcase_24:before {
+  content: "\e917";
+}
+.icon-abb_bring-to-front_24:before {
+  content: "\e918";
+}
+.icon-abb_broadcast_24:before {
+  content: "\e919";
+}
+.icon-abb_calculator_24:before {
+  content: "\e91a";
+}
+.icon-abb_calendar_24:before {
+  content: "\e91b";
+}
+.icon-abb_call_24:before {
+  content: "\e91c";
+}
+.icon-abb_camera_24:before {
+  content: "\e91d";
+}
+.icon-abb_cart_24:before {
+  content: "\e91e";
+}
+.icon-abb_certificate-document-1_24:before {
+  content: "\e91f";
+}
+.icon-abb_certificate-document-2_24:before {
+  content: "\e920";
+}
+.icon-abb_chat_24:before {
+  content: "\e921";
+}
+.icon-abb_check-mark_24:before {
+  content: "\e922";
+}
+.icon-abb_check-mark-circle-1_24:before {
+  content: "\e923";
+}
+.icon-abb_check-mark-circle-2_24:before {
+  content: "\e924";
+}
+.icon-abb_close_24:before {
+  content: "\e925";
+}
+.icon-abb_comment_24:before {
+  content: "\e926";
+}
+.icon-abb_computer_24:before {
+  content: "\e927";
+}
+.icon-abb_connect_24:before {
+  content: "\e928";
+}
+.icon-abb_controller-cabinet_24:before {
+  content: "\e929";
+}
+.icon-abb_controls-and-settings_24:before {
+  content: "\e92a";
+}
+.icon-abb_copy_24:before {
+  content: "\e92b";
+}
+.icon-abb_cut_24:before {
+  content: "\e92c";
+}
+.icon-abb_dashboard_24:before {
+  content: "\e92d";
+}
+.icon-abb_database_24:before {
+  content: "\e92e";
+}
+.icon-abb_database-new_24:before {
+  content: "\e92f";
+}
+.icon-abb_decimal_24:before {
+  content: "\e930";
+}
+.icon-abb_devices_24:before {
+  content: "\e931";
+}
+.icon-abb_disconnect_24:before {
+  content: "\e932";
+}
+.icon-abb_distribution_24:before {
+  content: "\e933";
+}
+.icon-abb_document_24:before {
+  content: "\e934";
+}
+.icon-abb_dollar_24:before {
+  content: "\e935";
+}
+.icon-abb_double-down_24:before {
+  content: "\e936";
+}
+.icon-abb_double-left_24:before {
+  content: "\e937";
+}
+.icon-abb_double-right_24:before {
+  content: "\e938";
+}
+.icon-abb_double-up_24:before {
+  content: "\e939";
+}
+.icon-abb_down_24:before {
+  content: "\e93a";
+}
+.icon-abb_down-arrow_24:before {
+  content: "\e93b";
+}
+.icon-abb_download_24:before {
+  content: "\e93c";
+}
+.icon-abb_drive_24:before {
+  content: "\e93d";
+}
+.icon-abb_edit_24:before {
+  content: "\e93e";
+}
+.icon-abb_end-call_24:before {
+  content: "\e93f";
+}
+.icon-abb_envelope_24:before {
+  content: "\e940";
+}
+.icon-abb_error-circle-1_24:before {
+  content: "\e941";
+}
+.icon-abb_error-circle-2_24:before {
+  content: "\e942";
+}
+.icon-abb_euro_24:before {
+  content: "\e943";
+}
+.icon-abb_event_24:before {
+  content: "\e944";
+}
+.icon-abb_export_24:before {
+  content: "\e945";
+}
+.icon-abb_factory_24:before {
+  content: "\e946";
+}
+.icon-abb_filter_24:before {
+  content: "\e947";
+}
+.icon-abb_folder_24:before {
+  content: "\e948";
+}
+.icon-abb_folder-new_24:before {
+  content: "\e949";
+}
+.icon-abb_folder-open_24:before {
+  content: "\e94a";
+}
+.icon-abb_forward_24:before {
+  content: "\e94b";
+}
+.icon-abb_fullscreen_24:before {
+  content: "\e94c";
+}
+.icon-abb_gauge_24:before {
+  content: "\e94d";
+}
+.icon-abb_gbp_24:before {
+  content: "\e94e";
+}
+.icon-abb_globe_24:before {
+  content: "\e94f";
+}
+.icon-abb_group_24:before {
+  content: "\e950";
+}
+.icon-abb_help-circle-1_24:before {
+  content: "\e951";
+}
+.icon-abb_help-circle-2_24:before {
+  content: "\e952";
+}
+.icon-abb_hide_24:before {
+  content: "\e953";
+}
+.icon-abb_history_24:before {
+  content: "\e954";
+}
+.icon-abb_home_24:before {
+  content: "\e955";
+}
+.icon-abb_hour-glass_24:before {
+  content: "\e956";
+}
+.icon-abb_image_24:before {
+  content: "\e957";
+}
+.icon-abb_import_24:before {
+  content: "\e958";
+}
+.icon-abb_information-circle-1_24:before {
+  content: "\e959";
+}
+.icon-abb_information-circle-2_24:before {
+  content: "\e95a";
+}
+.icon-abb_key_24:before {
+  content: "\e95b";
+}
+.icon-abb_label_24:before {
+  content: "\e95c";
+}
+.icon-abb_left_24:before {
+  content: "\e95d";
+}
+.icon-abb_left-arrow_24:before {
+  content: "\e95e";
+}
+.icon-abb_level_24:before {
+  content: "\e95f";
+}
+.icon-abb_light-bulb_24:before {
+  content: "\e960";
+}
+.icon-abb_link_24:before {
+  content: "\e961";
+}
+.icon-abb_list_24:before {
+  content: "\e962";
+}
+.icon-abb_location_24:before {
+  content: "\e963";
+}
+.icon-abb_lock-closed_24:before {
+  content: "\e964";
+}
+.icon-abb_lock-open_24:before {
+  content: "\e965";
+}
+.icon-abb_log-in_24:before {
+  content: "\e966";
+}
+.icon-abb_log-out_24:before {
+  content: "\e967";
+}
+.icon-abb_magnet_24:before {
+  content: "\e968";
+}
+.icon-abb_make-same-height_24:before {
+  content: "\e969";
+}
+.icon-abb_make-same-size_24:before {
+  content: "\e96a";
+}
+.icon-abb_make-same-width_24:before {
+  content: "\e96b";
+}
+.icon-abb_map_24:before {
+  content: "\e96c";
+}
+.icon-abb_matrix_24:before {
+  content: "\e96d";
+}
+.icon-abb_maximize_24:before {
+  content: "\e96e";
+}
+.icon-abb_menu_24:before {
+  content: "\e96f";
+}
+.icon-abb_menu-narrow_24:before {
+  content: "\e970";
+}
+.icon-abb_microphone_24:before {
+  content: "\e971";
+}
+.icon-abb_microphone-off_24:before {
+  content: "\e972";
+}
+.icon-abb_minimize_24:before {
+  content: "\e973";
+}
+.icon-abb_minus_24:before {
+  content: "\e974";
+}
+.icon-abb_minus-in-circle_24:before {
+  content: "\e975";
+}
+.icon-abb_missed-call_24:before {
+  content: "\e976";
+}
+.icon-abb_moon_24:before {
+  content: "\e977";
+}
+.icon-abb_more_24:before {
+  content: "\e978";
+}
+.icon-abb_motor_24:before {
+  content: "\e979";
+}
+.icon-abb_network_24:before {
+  content: "\e97a";
+}
+.icon-abb_new-document_24:before {
+  content: "\e97b";
+}
+.icon-abb_numericals_24:before {
+  content: "\e97c";
+}
+.icon-abb_object_24:before {
+  content: "\e97d";
+}
+.icon-abb_object-container-1_24:before {
+  content: "\e97e";
+}
+.icon-abb_object-container-2_24:before {
+  content: "\e97f";
+}
+.icon-abb_open-in-new-window_24:before {
+  content: "\e980";
+}
+.icon-abb_panel_24:before {
+  content: "\e981";
+}
+.icon-abb_paper-clip_24:before {
+  content: "\e982";
+}
+.icon-abb_paste_24:before {
+  content: "\e983";
+}
+.icon-abb_pause_24:before {
+  content: "\e984";
+}
+.icon-abb_pie-chart_24:before {
+  content: "\e985";
+}
+.icon-abb_pin_24:before {
+  content: "\e986";
+}
+.icon-abb_play_24:before {
+  content: "\e987";
+}
+.icon-abb_plugin_24:before {
+  content: "\e988";
+}
+.icon-abb_plus_24:before {
+  content: "\e989";
+}
+.icon-abb_plus-in-circle_24:before {
+  content: "\e98a";
+}
+.icon-abb_pop-out-window_24:before {
+  content: "\e98b";
+}
+.icon-abb_power-on-off_24:before {
+  content: "\e98c";
+}
+.icon-abb_pressure_24:before {
+  content: "\e98d";
+}
+.icon-abb_print_24:before {
+  content: "\e98e";
+}
+.icon-abb_pump_24:before {
+  content: "\e98f";
+}
+.icon-abb_qr-code_24:before {
+  content: "\e990";
+}
+.icon-abb_rearrange_24:before {
+  content: "\e991";
+}
+.icon-abb_redo_24:before {
+  content: "\e992";
+}
+.icon-abb_refresh_24:before {
+  content: "\e993";
+}
+.icon-abb_reports_24:before {
+  content: "\e994";
+}
+.icon-abb_resistor_24:before {
+  content: "\e995";
+}
+.icon-abb_rewind_24:before {
+  content: "\e996";
+}
+.icon-abb_right_24:before {
+  content: "\e997";
+}
+.icon-abb_right-arrow_24:before {
+  content: "\e998";
+}
+.icon-abb_robot_24:before {
+  content: "\e999";
+}
+.icon-abb_robot-cabinet_24:before {
+  content: "\e99a";
+}
+.icon-abb_robot-tool_24:before {
+  content: "\e99b";
+}
+.icon-abb_rotate-left-90_24:before {
+  content: "\e99c";
+}
+.icon-abb_rotate-left-180_24:before {
+  content: "\e99d";
+}
+.icon-abb_rotate-right-270_24:before {
+  content: "\e99e";
+}
+.icon-abb_rotate-left-270_241:before {
+  content: "\e99f";
+}
+.icon-abb_rotate-right-90_24:before {
+  content: "\e9a0";
+}
+.icon-abb_rotate-right-180_24:before {
+  content: "\e9a1";
+}
+.icon-abb_save_24:before {
+  content: "\e9a2";
+}
+.icon-abb_save-as_24:before {
+  content: "\e9a3";
+}
+.icon-abb_screen_24:before {
+  content: "\e9a4";
+}
+.icon-abb_search_24:before {
+  content: "\e9a5";
+}
+.icon-abb_send-to-back_24:before {
+  content: "\e9a6";
+}
+.icon-abb_server_24:before {
+  content: "\e9a7";
+}
+.icon-abb_settings_24:before {
+  content: "\e9a8";
+}
+.icon-abb_share_24:before {
+  content: "\e9a9";
+}
+.icon-abb_shortcut_24:before {
+  content: "\e9aa";
+}
+.icon-abb_shuffle_24:before {
+  content: "\e9ab";
+}
+.icon-abb_skip-to-end_24:before {
+  content: "\e9ac";
+}
+.icon-abb_skip-to-start_24:before {
+  content: "\e9ad";
+}
+.icon-abb_sld-1_24:before {
+  content: "\e9ae";
+}
+.icon-abb_sld-2_24:before {
+  content: "\e9af";
+}
+.icon-abb_smartphone_24:before {
+  content: "\e9b0";
+}
+.icon-abb_sort-alphabet-down_24:before {
+  content: "\e9b1";
+}
+.icon-abb_sort-alphabet-up_24:before {
+  content: "\e9b2";
+}
+.icon-abb_sort-date-down-1_24:before {
+  content: "\e9b3";
+}
+.icon-abb_sort-date-down-2_24:before {
+  content: "\e9b4";
+}
+.icon-abb_sort-date-up-1_24:before {
+  content: "\e9b5";
+}
+.icon-abb_sort-date-up-2_24:before {
+  content: "\e9b6";
+}
+.icon-abb_specification_24:before {
+  content: "\e9b7";
+}
+.icon-abb_stairs_24:before {
+  content: "\e9b8";
+}
+.icon-abb_star_24:before {
+  content: "\e9b9";
+}
+.icon-abb_stop_24:before {
+  content: "\e9ba";
+}
+.icon-abb_sun_24:before {
+  content: "\e9bb";
+}
+.icon-abb_sun-2_24:before {
+  content: "\e9bc";
+}
+.icon-abb_synchronize_24:before {
+  content: "\e9bd";
+}
+.icon-abb_system_24:before {
+  content: "\e9be";
+}
+.icon-abb_table_24:before {
+  content: "\e9bf";
+}
+.icon-abb_temperature_24:before {
+  content: "\e9c0";
+}
+.icon-abb_temperature-celsius-1_24:before {
+  content: "\e9c1";
+}
+.icon-abb_temperature-celsius-2_24:before {
+  content: "\e9c2";
+}
+.icon-abb_temperature-fahrenheit-1_24:before {
+  content: "\e9c3";
+}
+.icon-abb_temperature-fahrenheit-2_24:before {
+  content: "\e9c4";
+}
+.icon-abb_template_24:before {
+  content: "\e9c5";
+}
+.icon-abb_template-new_24:before {
+  content: "\e9c6";
+}
+.icon-abb_test_24:before {
+  content: "\e9c7";
+}
+.icon-abb_text_24:before {
+  content: "\e9c8";
+}
+.icon-abb_time_24:before {
+  content: "\e9c9";
+}
+.icon-abb_time-and-date_24:before {
+  content: "\e9ca";
+}
+.icon-abb_track-1_24:before {
+  content: "\e9cb";
+}
+.icon-abb_track-2_24:before {
+  content: "\e9cc";
+}
+.icon-abb_transformer_24:before {
+  content: "\e9cd";
+}
+.icon-abb_trash_24:before {
+  content: "\e9ce";
+}
+.icon-abb_tree-view_24:before {
+  content: "\e9cf";
+}
+.icon-abb_trend-1_24:before {
+  content: "\e9d0";
+}
+.icon-abb_trend-2_24:before {
+  content: "\e9d1";
+}
+.icon-abb_turbocharger_24:before {
+  content: "\e9d2";
+}
+.icon-abb_undo_24:before {
+  content: "\e9d3";
+}
+.icon-abb_unpin_24:before {
+  content: "\e9d4";
+}
+.icon-abb_up_24:before {
+  content: "\e9d5";
+}
+.icon-abb_up-arrow_24:before {
+  content: "\e9d6";
+}
+.icon-abb_upload_24:before {
+  content: "\e9d7";
+}
+.icon-abb_usb_24:before {
+  content: "\e9d8";
+}
+.icon-abb_user_24:before {
+  content: "\e9d9";
+}
+.icon-abb_user-in-circle_24:before {
+  content: "\e9da";
+}
+.icon-abb_video-camera-off_24:before {
+  content: "\e9db";
+}
+.icon-abb_video-camera-on_24:before {
+  content: "\e9dc";
+}
+.icon-abb_video-chat_24:before {
+  content: "\e9dd";
+}
+.icon-abb_view_24:before {
+  content: "\e9de";
+}
+.icon-abb_voltage_24:before {
+  content: "\e9df";
+}
+.icon-abb_warning-circle-1_24:before {
+  content: "\e9e0";
+}
+.icon-abb_warning-circle-2_24:before {
+  content: "\e9e1";
+}
+.icon-abb_warning-triangle_24:before {
+  content: "\e9e2";
+}
+.icon-abb_wrench_24:before {
+  content: "\e9e3";
+}
+.icon-abb_zoom-in_24:before {
+  content: "\e9e4";
+}
+.icon-abb_zoom-out_24:before {
+  content: "\e9e5";
+}
+.icon-abb_trend-3_24:before {
+  content: "\e9e6";
+}
+.icon-abb_trend-scatter_24:before {
+  content: "\e9e7";
+}
+.icon-abb_sort-ascending_24:before {
+  content: "\e9e8";
+}
+.icon-abb_sort-descending_16:before {
+  content: "\e9e9";
+}
+.icon-abb_advanced-settings_24:before {
+  content: "\e9ea";
+}
+.icon-abb_align_24:before {
+  content: "\e9eb";
+}
+.icon-abb_robot-axis_24:before {
+  content: "\e9ec";
+}
+.icon-abb_calibration_24:before {
+  content: "\e9ed";
+}
+.icon-abb_connection_24:before {
+  content: "\e9ee";
+}
+.icon-abb_network-status_24:before {
+  content: "\e9ef";
+}
+.icon-abb_create-backup_24:before {
+  content: "\e9f0";
+}
+.icon-abb_data-editor_24:before {
+  content: "\e9f1";
+}
+.icon-abb_execution-24:before {
+  content: "\e9f2";
+}
+.icon-abb_hardware-devices_24:before {
+  content: "\e9f3";
+}
+.icon-abb_io-devices_24:before {
+  content: "\e9f4";
+}
+.icon-abb_joystick_24:before {
+  content: "\e9f5";
+}
+.icon-abb_lead-through_24:before {
+  content: "\e9f6";
+}
+.icon-abb_jog-linear_24:before {
+  content: "\e9f7";
+}
+.icon-abb_document-excel_24:before {
+  content: "\e9f8";
+}
+.icon-abb_document-pdf_24:before {
+  content: "\e9f9";
+}
+.icon-abb_document-word_24:before {
+  content: "\e9fa";
+}
+.icon-abb_modify-rapid-position_24:before {
+  content: "\e9fb";
+}
+.icon-abb_software-module_24:before {
+  content: "\e9fc";
+}
+.icon-abb_network-status-1_24:before {
+  content: "\e9fe";
+}
+.icon-abb_network-status-2_24:before {
+  content: "\e9ff";
+}
+.icon-abb_payload_24:before {
+  content: "\ea00";
+}
+.icon-abb_jog-planar_24:before {
+  content: "\ea01";
+}
+.icon-abb_software-program-and-modules_24:before {
+  content: "\ea02";
+}
+.icon-abb_software-program-editor_24:before {
+  content: "\ea03";
+}
+.icon-abb_software-program_24:before {
+  content: "\ea04";
+}
+.icon-abb_program-pointer_24:before {
+  content: "\ea05";
+}
+.icon-abb_rapid-tasks_24:before {
+  content: "\ea06";
+}
+.icon-abb_jog-reorient_24:before {
+  content: "\ea07";
+}
+.icon-abb_reset-user-data_24:before {
+  content: "\ea09";
+}
+.icon-abb_restore-backup_24:before {
+  content: "\ea0a";
+}
+.icon-abb_select_24:before {
+  content: "\ea0b";
+}
+.icon-abb_software-routins_24:before {
+  content: "\ea0c";
+}
+.icon-abb_network-signal-strength-level-1_24:before {
+  content: "\ea0d";
+}
+.icon-abb_network-signal-strength-level-2_24_1:before {
+  content: "\ea0e";
+}
+.icon-abb_network-signal-strength-level-3_24:before {
+  content: "\ea0f";
+}
+.icon-abb_io-signals_24:before {
+  content: "\ea10";
+}
+.icon-abb_software-resources_24:before {
+  content: "\ea11";
+}
+.icon-abb_start-installer_24:before {
+  content: "\ea12";
+}
+.icon-abb_step-in_24:before {
+  content: "\ea13";
+}
+.icon-abb_step-out_24:before {
+  content: "\ea14";
+}
+.icon-abb_step-over_24:before {
+  content: "\ea15";
+}
+.icon-abb_touch_24:before {
+  content: "\ea16";
+}
+.icon-abb_video_24:before {
+  content: "\ea17";
+}
+.icon-abb_turn-clockwise_24:before {
+  content: "\ea18";
+}
+.icon-abb_turn-clockwise-off-target-speed_24:before {
+  content: "\ea19";
+}
+.icon-abb_turn-counter-clockwise-off-target-speed_24:before {
+  content: "\ea1a";
+}
+.icon-abb_add-drives_24:before {
+  content: "\ea1b";
+}
+.icon-abb_bearing_24:before {
+  content: "\ea1d";
+}
+.icon-abb_cloud_24:before {
+  content: "\ea1e";
+}
+.icon-abb_delete-drives_24:before {
+  content: "\ea1f";
+}
+.icon-abb_download-from-cloud_24:before {
+  content: "\ea20";
+}
+.icon-abb_drive-connected_24:before {
+  content: "\ea21";
+}
+.icon-abb_drives-error_24:before {
+  content: "\ea22";
+}
+.icon-abb_fieldbus_24:before {
+  content: "\ea23";
+}
+.icon-abb_generator_24:before {
+  content: "\ea24";
+}
+.icon-abb_maximum-value_24:before {
+  content: "\ea26";
+}
+.icon-abb_minimum-value_24:before {
+  content: "\ea27";
+}
+.icon-abb_not-allowed_24:before {
+  content: "\ea28";
+}
+.icon-abb_powertrain_24:before {
+  content: "\ea29";
+}
+.icon-abb_prevent-turning-fault_24:before {
+  content: "\ea2a";
+}
+.icon-abb_target-value-range_24:before {
+  content: "\ea2b";
+}
+.icon-abb_thumbnail-view_24:before {
+  content: "\ea2c";
+}
+.icon-abb_train_24:before {
+  content: "\ea2d";
+}
+.icon-abb_turn-counter-clockwise_24:before {
+  content: "\ea2e";
+}
+.icon-abb_wheel_24:before {
+  content: "\ea2f";
+}
+.icon-abb_wifi-network-disconnected_24:before {
+  content: "\ea31";
+}
+.icon-abb_write-to-default_24:before {
+  content: "\ea32";
+}
+.icon-abb_write-to-default-disabled_24:before {
+  content: "\ea33";
+}
+.icon-abb_caret-down_24:before {
+  content: "\ea08";
+}
+.icon-abb_caret-left_24:before {
+  content: "\ea1c";
+}
+.icon-abb_caret-right_24:before {
+  content: "\ea30";
+}
+.icon-abb_caret-up_24:before {
+  content: "\ea34";
+}
+.icon-abb_close-light_24:before {
+  content: "\ea35";
+}
+.icon-abb_triangle-down_24:before {
+  content: "\ea36";
+}
+.icon-abb_triangle-left_24:before {
+  content: "\ea37";
+}
+.icon-abb_triangle-right_24:before {
+  content: "\ea38";
+}
+.icon-abb_triangle-up_24:before {
+  content: "\ea39";
+}
+.icon-abb_check-mark-light_24:before {
+  content: "\ea3a";
+}
+.icon-abb_numbered-list_24:before {
+  content: "\ea3b";
+}
+.icon-abb_text-bold_24:before {
+  content: "\ea3c";
+}
+.icon-abb_text-italic_24:before {
+  content: "\ea3d";
+}
+.icon-abb_text-underline_24:before {
+  content: "\ea3e";
+}
+.icon-abb_call-outline_24:before {
+  content: "\e9fd";
+}
+.icon-abb_location-outline_24:before {
+  content: "\ea25";
+}
+.icon-abb_user-outline_24:before {
+  content: "\ea3f";
+}

@@ -1,0 +1,23 @@
+.tabs-group {
+    .mat-tab-label-content {
+        color: #1F1F1F !important;
+    }
+}
+
+.marginB {
+    margin-bottom: 10px;
+  }
+
+
+  .page-header {
+      span {
+        margin-top: 3px;
+        padding: 0px 5px;     
+      } 
+  }
+::ng-deep {
+    .mat-tab-body-content {
+        overflow: hidden !important;
+        
+    }
+}

@@ -1,0 +1,14 @@
+<table mat-table [dataSource]="dataSource" matSort matSortDirection="asc">
+  <ng-container *ngFor="let column of columns; let i = index" matColumnDef="{{ prepareColumnName(column.name, i) }}"
+    [sticky]="column.sticky === 'start'" [stickyEnd]="column.sticky === 'end'">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header="{{ prepareColumnName(column.name, i) }}"
+      [disabled]="!column.name || column.sort === false">
+      {{ column.displayName }}
+    </th>
+    <td mat-cell *matCellDef="let row">
+      {{ row[column.name] }}
+    </td>
+  </ng-container>
+  <tr mat-header-row *matHeaderRowDef="displayedColumns; sticky: [stickyHeader]"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>

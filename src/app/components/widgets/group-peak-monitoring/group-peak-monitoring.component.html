@@ -1,0 +1,67 @@
+<mat-card
+  style="display:inline;"
+  fxFlex.sm="100%"
+  fxFlex.sm="100%"
+  fxFlex.xs="100%"
+  class="real-time-container chart-card"
+>
+  <mat-card-title>
+    <div class="header-title">
+      <span class="abb-title">
+        <img
+          _ngcontent-ng-cli-universal-c1=""
+          class="nav-icons"
+          src="/assets/ABB UI Icon Package/SVG/move-icon.svg"
+        />
+        {{ widgetDetails.title }}
+      </span>
+      <span class="vertical-menu">
+        <button
+          style="float:right;"
+          mat-icon-button
+          [matMenuTriggerFor]="menu"
+          aria-label="Example icon-button with a menu"
+        >
+          <mat-icon>more_vert</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item>
+            <mat-icon>dialpad</mat-icon>
+            <span>Redial</span>
+          </button>
+        </mat-menu>
+      </span>
+    </div>
+  </mat-card-title>
+  <mat-card-content>
+      <div class="flex-contianer" fxLayout="row" fxLayoutAlign="start" fxLayoutGap="10px" style="margin-top: 15px;">
+          <div class="flex-container drop-down" fxLayout="column" fxLayoutGap="5px" style="width: 23%;">
+              <div class="font-style">Manufacturer</div>
+                  
+              <elcp-basicsearchdropdown [dropdownData]="exampleData"></elcp-basicsearchdropdown>
+
+          </div>
+          <div class="flex-container drop-down" fxLayout="column" fxLayoutGap="5px" style="width: 23%;">
+              <div class="font-style">Manufacturer</div>
+                  
+              <elcp-basicsearchdropdown [dropdownData]="exampleData"></elcp-basicsearchdropdown>
+
+          </div>
+          <div class="flex-container drop-down" fxLayout="column" fxLayoutGap="5px" style="width: 23%;">
+              <div class="font-style"></div>
+                  
+          <mat-checkbox>Show Contractual Power</mat-checkbox>
+
+          </div>
+          </div>
+
+ 
+    
+   
+
+    <elcp-dynamic-chart
+      style="display:inline;"
+      [chartOptions]="chartOptions"
+    ></elcp-dynamic-chart>
+  </mat-card-content>
+</mat-card>
