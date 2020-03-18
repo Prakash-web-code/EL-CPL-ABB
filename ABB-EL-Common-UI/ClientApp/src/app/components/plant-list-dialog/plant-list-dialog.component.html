@@ -1,0 +1,185 @@
+  <mat-tab-group class="const-group" [ngClass]="selectedTab === 'Overview' ? 'sites' : 'my-class'">
+    <mat-tab>
+      <ng-template mat-tab-label>
+        <a class="navigation-item" mat-list-item (click)="getType('All')" routerLinkActive="active">
+          <img class="abb-location-space" src="assets/ABB UI Icon Package/SVG/home-plant.svg">
+      </a>   
+      </ng-template>
+      <div class="search-tab">
+        <span class="tab-list-name">{{selectedTab}}</span>
+        <span  class="searchbox"> 
+            <input  class="search-input" type="text" placeholder="Search..." aria-label="Search" (input)="search($event.target.value)"
+              mdbInput>
+            <mat-icon fas icon="search" aria-hidden="true" class="search-icon"></mat-icon>
+            <img class="table-icon abb-location-space" src="assets/ABB UI Icon Package/PNG/16x16/abb_search_16.png">
+          </span>
+        </div>
+    </mat-tab>
+  </mat-tab-group>
+  
+  <mat-tab-group  [ngClass]="selectedTab === 'Overview' ? 'my-class' : 'sites'">
+    <mat-tab>
+      <ng-template mat-tab-label>
+        <a class="navigation-item" mat-list-item (click)="getType('Sites')" routerLinkActive="active">
+          <img class="abb-location-space" src="assets/ABB UI Icon Package/SVG/home-plant.svg">
+        </a>
+    
+     
+      </ng-template>
+      <div class="dialog-table">
+      <table cdk-table  [dataSource]="datasource" class="mat-elevation-z8"> 
+           
+        <ng-container cdkColumnDef="plants" >
+          <th cdk-header-cell *cdkHeaderCellDef></th>
+          <td cdk-cell *cdkCellDef="let element" class="table-data"> 
+            <div fxLayout="row" class="plant-list-drop-down overflow-ellipsis" fxLayoutAlign="start center">
+              <span fxLayoutAlign="center" fxFlex="5" class="header-home-icon">
+                <img class="table-icon" src={{element.icon}}>
+              </span>
+              <span fxFlex >
+                  <div class="plant-list-plant-name"><b>{{element.plants}}</b></div>
+                  <div class="text-overflow-design">{{element.subname}}</div>
+              </span>              
+            </div>
+         </td>
+        </ng-container>
+      
+        <ng-container cdkColumnDef="user">
+          <th cdk-header-cell *cdkHeaderCellDef></th>
+
+          <td cdk-cell *cdkCellDef="let element" class="user-column">   <img class="table-icon-user abb-location-space" src="assets/ABB UI Icon Package/PNG/16x16/abb_user-outline_16.png">{{element.user}} </td>
+        </ng-container>
+      
+        <ng-container cdkColumnDef="favourites">
+          <th cdk-header-cell *cdkHeaderCellDef></th>
+          <td cdk-cell *cdkCellDef="let element" class="fav-column"> 
+            <i *ngIf="element.isIcon">
+              <img src="assets/ABB UI Icon Package/SVG/selected-star.svg">
+            </i>
+            <i *ngIf="!element.isIcon">
+              <img src="assets/ABB UI Icon Package/SVG/not-selected-star.svg">
+            </i>
+          </td>
+        </ng-container>
+      
+        <tr cdk-header-row *cdkHeaderRowDef="displayedColumns"></tr>
+        <tr cdk-row *cdkRowDef="let row; columns: displayedColumns;"></tr>
+      
+        
+      </table>  
+      </div>
+    </mat-tab>
+  
+    <mat-tab>
+      <ng-template mat-tab-label>
+        <a class="navigation-item" mat-list-item (click)="getType('Groups')" routerLinkActive="active">
+          <img class="abb-location-space" src="assets/ABB UI Icon Package/SVG/home-plant.svg">
+      </a>
+      </ng-template>
+      <div class="dialog-table">
+      <table cdk-table  [dataSource]="datasource" class="mat-elevation-z8"> 
+           
+        <ng-container cdkColumnDef="plants" >
+          <th cdk-header-cell *cdkHeaderCellDef></th>
+          <td cdk-cell *cdkCellDef="let element" class="table-data">
+            <div fxLayout="row" class="plant-list-drop-down overflow-ellipsis" fxLayoutAlign="start center">
+              <span fxLayoutAlign="center" fxFlex="5" class="header-home-icon">
+                <img class="table-icon" src={{element.icon}}>
+              </span>
+              <span fxFlex >
+                  <div class="plant-list-plant-name"><b>{{element.plants}}</b></div>
+                  <div class="text-overflow-design">{{element.subname}}</div>
+              </span>              
+            </div>
+          </td>
+        </ng-container>
+      
+        <ng-container cdkColumnDef="user">
+          <th cdk-header-cell *cdkHeaderCellDef></th>
+
+          <td cdk-cell *cdkCellDef="let element" class="fav-column">   <img class="table-icon-user" src="assets/ABB UI Icon Package/PNG/16x16/abb_user-outline_16.png">{{element.user}} </td>
+        </ng-container>
+      
+        <ng-container cdkColumnDef="favourites">
+          <th cdk-header-cell *cdkHeaderCellDef></th>
+          <td cdk-cell *cdkCellDef="let element"> 
+            <i *ngIf="element.isIcon">
+              <img src="assets/ABB UI Icon Package/SVG/selected-star.svg">
+            </i>
+            <i *ngIf="!element.isIcon">
+              <img src="assets/ABB UI Icon Package/SVG/not-selected-star.svg">
+            </i>
+          </td>
+        </ng-container>
+      
+        <tr cdk-header-row *cdkHeaderRowDef="displayedColumns"></tr>
+        <tr cdk-row *cdkRowDef="let row; columns: displayedColumns;"></tr>
+      
+        
+      </table>  
+    </div>
+    </mat-tab>
+
+    <mat-tab>
+      <ng-template mat-tab-label>
+        <a class="navigation-item" mat-list-item (click)="getType('Favourites1')" routerLinkActive="active">
+          <img class="abb-location-space" src="assets/ABB UI Icon Package/SVG/home-plant.svg">
+      </a>
+      </ng-template>
+      <div class="dialog-table">
+      <table cdk-table  [dataSource]="datasource" class="mat-elevation-z8"> 
+           
+        <ng-container cdkColumnDef="plants" >
+          <th cdk-header-cell *cdkHeaderCellDef></th>
+          <td cdk-cell *cdkCellDef="let element" class="table-data">
+            <div fxLayout="row" class="plant-list-drop-down overflow-ellipsis" fxLayoutAlign="start center">
+              <span fxLayoutAlign="center" fxFlex="5" class="header-home-icon">
+                <img class="table-icon" src={{element.icon}}>
+              </span>
+              <span fxFlex >
+                  <div class="plant-list-plant-name"><b>{{element.plants}}</b></div>
+                  <div class="text-overflow-design">{{element.subname}}</div>
+              </span>              
+            </div>
+          </td>
+        </ng-container>
+      
+        <ng-container cdkColumnDef="user">
+          <th cdk-header-cell *cdkHeaderCellDef></th>
+
+          <td cdk-cell *cdkCellDef="let element" class="user-column">   <img class="table-icon-user" src="assets/ABB UI Icon Package/PNG/16x16/abb_user-outline_16.png">{{element.user}} </td>
+        </ng-container>
+      
+        <ng-container cdkColumnDef="favourites">
+          <th cdk-header-cell *cdkHeaderCellDef></th>
+          <td cdk-cell *cdkCellDef="let element" class="fav-column"> 
+            <i *ngIf="element.isIcon">
+              <img src="assets/ABB UI Icon Package/SVG/selected-star.svg">
+            </i>
+            <i *ngIf="!element.isIcon">
+              <img src="assets/ABB UI Icon Package/SVG/not-selected-star.svg">
+            </i>
+          </td>
+        </ng-container>
+      
+        <tr cdk-header-row class="table-row" *cdkHeaderRowDef="displayedColumns"></tr>
+        <tr cdk-row *cdkRowDef="let row; columns: displayedColumns;"></tr>
+      
+        
+      </table>  
+    </div>
+    </mat-tab>
+  
+    <mat-tab>
+      <ng-template mat-tab-label>
+        <a class="navigation-item" mat-list-item routerLinkActive="active">
+          <img class="abb-location-space last-tab" src="assets/ABB UI Icon Package/SVG/home-plant.svg">
+      </a>
+      </ng-template>  
+    </mat-tab>
+    
+  </mat-tab-group>
+        
+  
+   
+  

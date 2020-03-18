@@ -1,0 +1,36 @@
+@import '../../../components/styles/fonts/all';
+
+
+.table-widget-container {
+
+  .card-widget-container {
+    min-height: 84%;
+  }
+
+  ::ng-deep {
+
+    .pagination {
+      align-items: center !important;
+
+      .mat-select {
+        display: inline-block;
+        width: 20%;
+        outline: 0;
+      }
+
+      .footer-select .mat-select-trigger {
+        border: 1px solid #c1bebe;
+        border-radius: 4px;
+        padding-left: 4px;
+        min-width: 35%;
+        padding: 3px;
+        bottom: -1px;
+        left: 5px;
+      }
+
+      .footer-select .mat-select-value-text {
+        font-size: 12px;
+      }
+    }
+  }
+}

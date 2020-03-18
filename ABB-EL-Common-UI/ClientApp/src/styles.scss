@@ -1,0 +1,195 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+@import '../src/app/components/widgets/real-time-currents/real-time-currents.component.scss';
+@import '../src/app/components/widgets/energy-cost/energy-cost.component.scss';
+@import '../src/app/components/widgets/real-time-power/real-time-power.component.scss';
+@import '../src/app/components/widgets/real-time-voltage/real-time-voltage.component.scss';
+
+@import 'variables';
+
+
+
+
+@font-face {
+  font-family: "ABBvoice-Md";
+  src: url("../src/app/components/styles/fonts/ABBvoice_Md/ABBvoiceMd.eot"); /* IE9 Compat Modes */
+  src: url("../src/app/components/styles/fonts/ABBvoice_Md/ABBvoiceMd.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../src/app/components/styles/fonts/ABBvoice_Md/ABBvoiceMd.otf") format("opentype"), /* Open Type Font */
+    url("../src/app/components/styles/fonts/ABBvoice_Md/ABBvoiceMd.svg") format("svg"), /* Legacy iOS */
+    url("../src/app/components/styles/fonts/ABBvoice_Md/ABBvoiceMd.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("../src/app/components/styles/fonts/ABBvoice_Md/ABBvoiceMd.woff") format("woff"), /* Modern Browsers */
+    url("../src/app/components/styles/fonts/ABBvoice_Md/ABBvoiceMd.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: "ABBvoice-Lt";
+  src: url("../src/app/components/styles/fonts/ABBvoice_Lt/ABBvoiceLt.eot"); /* IE9 Compat Modes */
+  src: url("../src/app/components/styles/fonts/ABBvoice_Lt/ABBvoiceLt.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../src/app/components/styles/fonts/ABBvoice_Lt/ABBvoiceLt.otf") format("opentype"), /* Open Type Font */
+    url("../src/app/components/styles/fonts/ABBvoice_Lt/ABBvoiceLt.svg") format("svg"), /* Legacy iOS */
+    url("../src/app/components/styles/fonts/ABBvoice_Lt/ABBvoiceLt.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("../src/app/components/styles/fonts/ABBvoice_Lt/ABBvoiceLt.woff") format("woff"), /* Modern Browsers */
+    url("../src/app/components/styles/fonts/ABBvoice_Lt/ABBvoiceLt.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: "ABBvoice-Rg";
+  src: url("../src/app/components/styles/fonts/ABBvoice_Rg/ABBvoiceRg.eot"); /* IE9 Compat Modes */
+  src: url("../src/app/components/styles/fonts/ABBvoice_Rg/ABBvoiceRg.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../src/app/components/styles/fonts/ABBvoice_Rg/ABBvoiceRg.otf") format("opentype"), /* Open Type Font */
+    url("../src/app/components/styles/fonts/ABBvoice_Rg/ABBvoiceRg.svg") format("svg"), /* Legacy iOS */
+    url("../src/app/components/styles/fonts/ABBvoice_Rg/ABBvoiceRg.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("../src/app/components/styles/fonts/ABBvoice_Rg/ABBvoiceRg.woff") format("woff"), /* Modern Browsers */
+    url("../src/app/components/styles/fonts/ABBvoice_Rg/ABBvoiceRg.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: "ABBvoice-Bd";
+  src: url("../src/app/components/styles/fonts/ABBvoice_Bd/ABBvoiceBd.eot"); /* IE9 Compat Modes */
+  src: url("../src/app/components/styles/fonts/ABBvoice_Bd/ABBvoiceBd.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../src/app/components/styles/fonts/ABBvoice_Bd/ABBvoiceBd.otf") format("opentype"), /* Open Type Font */
+    url("../src/app/components/styles/fonts/ABBvoice_Bd/ABBvoiceBd.svg") format("svg"), /* Legacy iOS */
+    url("../src/app/components/styles/fonts/ABBvoice_Bd/ABBvoiceBd.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("../src/app/components/styles/fonts/ABBvoice_Bd/ABBvoiceBd.woff") format("woff"), /* Modern Browsers */
+    url("../src/app/components/styles/fonts/ABBvoice_Bd/ABBvoiceBd.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+html,
+body {
+font-family: 'ABBvoice-Rg',sans-serif;
+background-color : $background-color;
+margin: 0;
+padding: 0;
+font-size: 16px;
+height: 100vh;
+}
+
+code {
+  color: #e01a76;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+
+
+.overflow-ellipsis {
+  // overflow: hidden;
+  text-overflow: ellipsis;
+  // white-space: nowrap;
+}
+
+.material-icons {
+  font-family: 'Material Icons' !important;
+}
+
+.table-widget-container {
+  height: 496px;
+}
+
+
+mat-progress-bar .mat-progress-bar-buffer {
+  background: #EBEBEB;
+}
+
+.critical .mat-progress-bar-fill::after {
+  background-color: #F03040 ;
+}
+
+.moderate .mat-progress-bar-fill::after {
+  background-color: #FF7300 ;
+}
+
+.good .mat-progress-bar-fill::after {
+  background-color: #0CA919 ;
+}
+
+.medium .mat-progress-bar-fill::after {
+  background-color: #F7C530 ;
+}
+
+.warningIcon .mat-icon{
+  height:10px !important;
+}
+
+
+@media only screen and (max-width: 375px) {
+  .table-widget-container {
+    height: 520px !important;
+  }
+}
+
+.table-widget-container {
+  .nav-icons {
+    margin-right: 5px;
+  }
+
+  .material-icons {
+    font-size: 19px;
+  }
+
+  .header-title {
+    display: flex;
+    font-size: 0.7em;
+  }
+
+  .app-icon-color {
+    color: #adacac;
+  }
+
+  .vertical-menu {
+    margin-top: -11px;
+    position: absolute;
+    right: 0px;
+  }
+
+  .label-font-weight {
+    font-weight: bold;
+  }
+
+  mat-grid-tile {
+    background: $blue1;
+  }
+
+  ::ng-deep {
+
+    .mat-paginator-container {
+      position: absolute;
+      bottom: 0px;
+      padding: 8px 8px !important;
+      width: 90% !important;
+    }
+
+    .mat-form-field-appearance-legacy .mat-form-field-infix {
+      border: 1px solid #c1bebe;
+      border-radius: 4px;
+      padding-left: 4px;
+    }
+
+    .mat-form-field-underline {
+      display: none;
+      margin-top: 10px;
+    }
+
+    .mat-paginator-range-actions {
+      display: none !important;
+    }
+
+  }
+}

@@ -1,0 +1,140 @@
+<div class="asset-page-background">
+    <div class="assetpage-content">
+      <div class="assetPageHeader">
+        <div>
+          <div class="assetsImage">
+            <img class="nav-icons" src="../../../../../../assets/ABB UI Icon Package/PNG/16x16/abb_server_16.png">
+          </div>          
+          <div class="assets">Assets:</div><div class="allAssets">All Assets</div>
+        </div>
+        <div>
+          <div>
+            <button class ="filterButton" mat-button>
+              <img class="nav-icons" src="/assets/ABB UI Icon Package/PNG/16x16/abb_filter_16.png">
+              <div class="filtertext">Filters</div>
+            </button>
+          </div>          
+        </div>
+        
+      </div>
+      <div class="settingIcon">
+        <a mat-button>
+          <img class="nav-icons" src="/assets/ABB UI Icon Package/PNG/16x16/abb_wrench_16.png">
+        </a>
+      </div>
+        
+    <div #myDiv>
+    <table class="example-container" cdk-table matSort [dataSource]="dataSource" >
+        <ng-container cdkColumnDef="name">
+          <th class="nameCol" mat-sort-header cdk-header-cell *cdkHeaderCellDef> Name </th>
+          <td class="nameCol nameColDat" cdk-cell *cdkCellDef="let element" data-label="Name"> 
+            <div>
+                <img class="assetImage" src="{{element.Url}}" alt="No Image">
+                <div class="nameContainer">
+                    <div class="smallNameClass">
+                        <span>{{element.Name}}</span>
+                    </div>
+                    <div>
+                      <span>
+                        <span class="dropdown">
+                          <button mat-icon-button aria-label="menu for an asset">
+                            <mat-icon>more_vert</mat-icon>
+                          </button>
+                          <span class="dropdown-content">
+                                <button mat-button aria-label="menu for an asset">
+                                  <mat-icon>dialpad</mat-icon>
+                                  <span>Redial</span>
+                                </button>
+                          </span> 
+                        </span>                     
+                      </span>
+                    </div>
+                </div>            
+            </div>        
+        </td>
+        </ng-container>
+    
+        <ng-container cdkColumnDef="condition">
+            <th class="conditionCol" cdk-header-cell *cdkHeaderCellDef> Condition </th>
+            <td class="conditionCol " cdk-cell *cdkCellDef="let element" data-label="Condition">
+                <div *ngIf="element.Condition === 'Warning'" class="conditionColDisplay">
+                    <mat-icon class="warningIcon" color="warn" aria-hidden="false" font-size="10px" aria-label="warning icon">warning</mat-icon>
+                    <!--<img class="nav-icons" color="warn" src="../../../../../../assets/ABB UI Icon Package/PNG/16x16/abb_warning-triangle_16.png">-->
+                </div>
+            </td>
+        </ng-container>
+    
+        <ng-container cdkColumnDef="connection">
+          <th  class="connectionCol" cdk-header-cell *cdkHeaderCellDef> Connection </th>
+          <td class="connectionCol connectionColDat" cdk-cell *cdkCellDef="let element" data-label="Connection"> 
+            <div  *ngIf="element.DeviceConnectivityStatus === 'Unavailable'">
+                <mat-icon  svgIcon="connected_icon" aria-hidden="false" height="10px" aria-label="connection icon"></mat-icon>
+              <span class="connectedText" *ngIf="element.DeviceConnectivityStatus !== 'Unavailable'">Connected</span>
+              <span class="connectedText disconnected" *ngIf="element.DeviceConnectivityStatus === 'Unavailable'">Disconnected</span>
+            </div>      
+          </td>
+        </ng-container>
+      
+    
+        <ng-container cdkColumnDef="class">
+          <th class="classCol" cdk-header-cell *cdkHeaderCellDef> Class </th>
+          <td class="classCol classColFont" cdk-cell *cdkCellDef="let element" data-label="Class">{{element.DeviceClass}} </td>
+        </ng-container>
+    
+          <ng-container cdkColumnDef="manufacturer">
+            <th class="manufacturerCol" cdk-header-cell *cdkHeaderCellDef> Manufacturer </th>
+            <td class="manufacturerCol thirteenpxfont" cdk-cell *cdkCellDef="let element" data-label="Manufacturer"> {{element.Manufacturer}} </td>
+          </ng-container>
+    
+          <ng-container cdkColumnDef="model">
+            <th class="modelCol" cdk-header-cell *cdkHeaderCellDef> Model </th>
+            <td class="modelCol thirteenpxfont" cdk-cell *cdkCellDef="let element" data-label="Model"> {{element.Model}} </td>
+          </ng-container>
+    
+          <ng-container cdkColumnDef="serialNumber">
+            <th class="serialNumberCol" cdk-header-cell *cdkHeaderCellDef> Serial number </th>
+            <td class="serialNumberCol thirteenpxfont" cdk-cell *cdkCellDef="let element" data-label="Serial number"> {{element.SerialNumber}} </td>
+          </ng-container>
+    
+          <ng-container cdkColumnDef="healthIndex">
+            <th class="healthIndexCol" cdk-header-cell *cdkHeaderCellDef> Health index (%) </th>
+            <td class="healthIndexCol" cdk-cell *cdkCellDef="let element" data-label="Health index (%)">
+                <div class="healthIndex">
+                    <div class="progressbarBefore">
+                        <div>{{element.HealthIndex}}</div>
+                        <div>{{element.HealthIndex === 'Good'? 80 :
+                              (element.HealthIndex === 'Critical'? 20 :
+                              (element.HealthIndex === 'Medium' ? 60 : 40))}}</div>
+                    </div>
+                    <div *ngIf="element.HealthIndex === 'Good'">
+                      <mat-progress-bar class ="good" mode="determinate" value=80></mat-progress-bar>
+                    </div>
+                    <div *ngIf="element.HealthIndex === 'Medium'">
+                      <mat-progress-bar class ="medium" mode="determinate" value=60></mat-progress-bar>
+                    </div>
+                    <div *ngIf="element.HealthIndex === 'Moderate'">
+                      <mat-progress-bar class ="moderate" mode="determinate" value=40></mat-progress-bar>
+                    </div>
+                    <div *ngIf="element.HealthIndex === 'Critical'">
+                      <mat-progress-bar class ="critical" mode="determinate" value=40></mat-progress-bar>
+                    </div>
+                    <div class ="progressbarAfter">
+                        <div>0</div>
+                        <div>100</div>
+                    </div>                
+                </div>
+            </td>
+          </ng-container>
+      
+        <tr cdk-header-row *cdkHeaderRowDef="displayedColumns"></tr>
+        <tr cdk-row *cdkRowDef="let row; columns: displayedColumns;"></tr>
+      </table>
+    </div>
+    <div *ngIf="ajaxCallDone">
+      Loading ...
+    </div>
+    </div>
+      
+</div>
+    
+    

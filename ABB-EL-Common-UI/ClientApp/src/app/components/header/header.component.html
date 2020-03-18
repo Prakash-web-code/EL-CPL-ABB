@@ -1,0 +1,68 @@
+<div class="div-border dashboard-div-margin"></div>
+
+<div  class="div-border container overflow-ellipsis" fxLayoutAlign="start center" fxLayout.xs="column" fxLayout="row">
+  <div fxLayoutAlign="space-around center" fxLayout.xs="column">
+    <!-- Abb logo -->
+    <div fxFlex>
+      <img class="abb-logo-image" src="assets/ELCPLogo.svg">
+    </div>
+
+    <!-- Plant Detail -->
+    <div *ngIf="showPlantslist" (click)= "openDialog()" class="div-border plant-list-div" href="#" fxFlex fxLayoutAlign="start center"
+      fxLayout.xs="row">
+      <div fxLayout="row" class="plant-list-drop-down overflow-ellipsis" fxLayoutAlign="start center">
+
+        <div fxFlex class="vertical-border"></div>
+        <div fxFlex>
+
+          <div fxFlex>
+            <div class="header-home-icon">
+              <img src="assets/ABB UI Icon Package/SVG/home-plant.svg">
+            </div>
+            <div class="plant-list-plant-name" fxFlex>
+              <div><b>{{plantsList.Name}}</b></div>
+              <div class="text-overflow-design">{{plantSubName}}</div>
+            </div>
+          </div>
+
+          <div fxFlex>
+
+            <div fxFlex fxLayoutAlign="end center" class="header-roles">
+              <div fxFlex fxLayout Align="center center" class="role"> <img class="nav-icons icon-style"
+                  src="assets/ABB UI Icon Package/PNG/16x16/abb_user-outline_16.png">{{plantsList.PlantRole}}</div>
+              <div fxFlex fxLayoutAlign="center center"><img class="nav-icons icon-style"
+                  src="assets/ABB UI Icon Package/PNG/16x16/abb_time_16.png"> {{dateTime| date:'H:mm'}}</div>
+              <div *ngIf="isMoreThanOnePlantAssociated === true" fxFlex fxLayoutAlign="center center"><img
+                  class="nav-icons" src="assets/ABB UI Icon Package/PNG/16x16/abb_caret-down_16.png"></div>
+            </div>
+          </div>
+        </div>
+        <div fxFlex class="vertical-border"></div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- user account details -->
+
+
+  <div fxFlex fxLayout='row' fxLayoutAlign="end center" class="div-border">
+
+
+    <span class="header-icons"><img class="icons"
+        src="assets/ABB UI Icon Package/PNG/16x16/abb_warning-circle-1_16.png"></span>
+    <span class="header-icons"><img class="icons"
+        src="assets/ABB UI Icon Package/PNG/16x16/abb_download-from-cloud_16.png"></span>
+    <span class="last-icon"><img class="icons" src="assets/ABB UI Icon Package/PNG/16x16/abb_database_16.png"></span>
+
+
+    <span><a type="button" class="userinfo user-name-space" data-toggle="dropdown" aria-haspopup="true"
+        aria-expanded="false" *ngIf="this.isAuthenticated">
+        {{this.userName}}
+      </a></span>
+    <span [attr.data-letters]="loggedInUser"></span>
+
+  </div>
+</div>

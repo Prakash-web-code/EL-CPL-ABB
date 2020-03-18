@@ -1,0 +1,148 @@
+// Mixin styles for usage
+@import "font-colors";
+
+@mixin common-font(
+  $colorValue,
+  $fontFamily,
+  $fontSize,
+  $fontWeight,
+  $fontStretch,
+  $fontStyle,
+  $letterSpacing,
+  $opacityValue
+) {
+  color: $colorValue;
+  font-family: $fontFamily, sans-serif;
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+  font-stretch: $fontStretch;
+  font-style: $fontStyle;
+  letter-spacing: $letterSpacing;
+  opacity: $opacityValue
+}
+
+@mixin widget-title {
+  @include common-font(
+    $widget-title-color,
+    ABBvoice-Md,
+    16px,
+    normal,
+    normal,
+    normal,
+    0,
+    1
+  );
+}
+
+@mixin widget-select-title {
+  @include common-font(
+    #1F1F1F,
+    ABBvoice-Rg,
+    11px,
+    normal,
+    normal,
+    normal,
+    0,
+    1
+  );
+}
+
+
+@mixin widget-select-title {
+  @include common-font(
+    $gray2,
+    ABBvoice-Rg,
+    11px,
+    normal,
+    normal,
+    normal,
+    0,
+    1
+  );
+}
+
+
+@mixin widget-table-header {
+  @include common-font(
+    $gray1,
+    ABBvoice-Md,
+    14px,
+    normal,
+    normal,
+    normal,
+    0,
+    1
+  );
+}
+
+
+@mixin abb-all-btn {
+  @include common-font(
+    $blue1,
+    ABBvoice-Rg,
+    12px,
+    normal,
+    normal,
+    normal,
+    0,
+    1
+  );
+}
+
+
+@mixin abb-all-favorite {
+  @include common-font(
+    null,
+    ABBvoice-Rg,
+    12px,
+    normal,
+    normal,
+    normal,
+    0,
+    1
+  );
+}
+
+
+@mixin abb-table-body {
+  @include common-font(
+    $widget-title-color,
+    ABBvoice-Rg,
+    13px,
+    normal,
+    normal,
+    normal,
+    0,
+    1
+  );
+}
+
+@mixin abb-tab-title {
+  @include common-font(
+    $widget-title-color,
+    ABBvoice-Rg,
+    14px,
+    normal,
+    normal,
+    normal,
+    0,
+    1
+  );
+}
+@mixin pagination-label {
+  @include common-font(
+    $widget-title-color,
+    ABBvoice-Rg,
+    12px,
+    normal,
+    normal,
+    normal,
+    0,
+    1
+  );
+}
+
+
+
+
+

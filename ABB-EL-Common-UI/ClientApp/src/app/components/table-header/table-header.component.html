@@ -1,0 +1,15 @@
+<div class=" widget-select-title">Asset</div>
+<div class="margin-left table-header">
+  <mat-form-field>
+    <mat-label>Select Device</mat-label>
+    <mat-select>
+      <mat-option *ngFor="let device of devices" [value]="device.value">
+        {{device.viewValue}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-button-toggle-group name="fontStyle" aria-label="Font Style" class="float-right" value="All">
+    <mat-button-toggle (click)="displayFavour('All')" value="All">All</mat-button-toggle>
+    <mat-button-toggle (click)="displayFavour('Favorites')" value="Favorites">Favourites</mat-button-toggle>
+  </mat-button-toggle-group>
+</div>

@@ -1,0 +1,320 @@
+.asset-page-background{
+    background-color: #EBEBEB;
+  }
+  
+  .assetpage-content {
+    padding: 10px;
+  }
+  .assetPageHeader{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    color:#1F1F1F;
+  }
+
+  .disconnected{
+    color:#9F9F9F;
+  }
+
+  .settingIcon{
+    display:none
+  }
+
+  .assets{
+    font-size: 16px;
+    font: Regular 13px/20px ABBvoice;
+    padding-left: 8px;
+  }
+
+  .allAssets{
+    font-size: 16px;
+    font-family: ABBvoice-Md;
+    padding-left: 8px;
+  }
+
+  .filtertext{
+    padding-left:5px;
+    display:inline-block;
+  }
+
+  .assets,.allAssets,.assetsImage{
+    display:inline-block;
+  }
+  
+  .mat-button{
+    background-color: #FFFFFF;
+    border-radius: 50px;
+  }
+
+  .dropdown-content .mat-button{
+    background-color: #FFFFFF;
+    border-radius: 3px;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #FFFFFF;
+    left:25px;
+    top:0px;
+    box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 3px;
+    font-family: ABBvoice-Rg;
+  }
+
+  .dropdown:hover .dropdown-content {display: block;}
+
+  .mat-progress-bar{
+    height:10px;
+  }
+  
+  .connectedText{
+    position: relative;
+    bottom:7px;
+    display:inline-block;
+    padding-left:5px;
+    }
+  
+
+  /*.connectionStyles{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+  }*/
+  
+    .assetImage{
+      width:50px;
+      height:50px;
+      float: left;
+    }
+
+    .thirteenpxfont{
+      font-size: 13px;
+      font-family: ABBvoice-Rg;
+      font-weight: 600;
+    }
+    
+    .classColFont{
+      font-size: 11px;
+      font-family: ABBvoice-Rg;
+      font-weight: 600;
+      
+    }
+
+    .connectionColDat{
+      font-size: 11px;
+      font-family: ABBvoice-Rg;
+      font-weight: 600;
+    }
+
+    .nameColDat{
+      font-size: 14px;
+      font-family: ABBvoice-Md;
+      /*font-weight: 600;*/
+    }
+
+  .progressbarBefore{
+    display:flex;
+    justify-content: space-between;
+    font-family: ABBvoice-Bd;
+    font-size: 11px;
+    /*font-weight: bold;*/
+  }
+  
+  .progressbarAfter{
+    display:flex;
+    justify-content: space-between;
+    font-family: ABBvoice-Rg;
+    font-size: 11px;
+    color:#AAAAAA;
+  }
+  
+  
+  
+  /*.cdk-header-row{
+      text-align: left;
+  }*/
+  
+  
+  
+  .cdk-header-row{
+    font-size: 12px;
+    font-weight: 600;
+    color:#686868;
+    text-align: left;
+    font-family: ABBvoice-Md;
+  }
+  
+  .cdk-table {
+    border-collapse:separate; 
+    border-spacing: 0 0.4em;
+    margin:0px auto;
+    width:100%;
+    margin-top:10px;
+    
+  }
+  
+  .cdk-row{
+    background-color:#FFFFFF;
+    margin-top:20px;
+    color:#1F1F1F;
+    height:70px;
+    vertical-align: middle;
+  }
+  
+  
+  .healthIndex{
+    width:52%;
+  }
+
+  .connectionColDat{
+    font-size: 11px;
+    font-family: ABBvoice-Md;
+  }
+  
+  
+  
+  @media(max-width:1039px)
+  { 
+    .cdk-table .cdk-header-cell {
+      
+      border: 10px solid;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+    }
+  
+    .cdk-table .cdk-cell {
+      border-bottom: 1px solid #ddd;
+      display: block;
+      text-align: right;
+      height:30px;
+      margin-bottom: 7px;
+      padding:20px;
+    }
+  
+    .cdk-row{
+      margin-bottom: 20px;
+    }
+  
+    .cdk-table .cdk-cell:last-child {
+      border-bottom: 0;
+    }
+  
+    .cdk-table .cdk-cell:before {
+      /*
+      * aria-label has no advantage, it won't be read inside a table
+      content: attr(aria-label);
+      */
+      content: attr(data-label);
+      float: left;
+      font-weight: normal;
+      font-size: 12px;
+      font-weight: 600;
+      color:#686868;
+      font-family: ABBvoice-Md;
+      display:flex;
+      align-items: center;
+    }
+    
+    /*.cdk-header-row{
+      font-size: 12px;
+      font-weight: 600;
+      color:#686868;
+      text-align: left;
+      font-family: ABBvoice-Md;
+    }*/
+  
+    .assetImage{
+      display:none;
+    }
+  
+    .healthIndex{
+      float:right;
+      width:45%;
+    }
+  
+    .nameContainer{
+      display:flex;
+      justify-content:space-evenly;
+      float:right;
+      align-items: center;
+      
+    }
+
+  }
+  
+  @media(min-width:1040px)
+  {
+    .nameContainer{
+      display:flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      top:5px;
+    }
+  
+    .nameCol{
+        width:20%;
+        text-align: left;
+    }
+  
+   
+  
+    .conditionCol{
+      width: 5%;
+      text-align: center;
+    }
+  
+    .conditionColDisplay{
+      display:flex;
+      justify-content: center;
+    }
+  
+    .connectionCol{
+      width:9%;
+      padding-left: 5px;
+      /*text-align: center;*/
+    }
+  
+
+
+    .classCol{
+      width:10%;
+      padding-left: 10px;
+    }
+   
+  
+  
+  
+    .modelCol{
+      width:12%;
+    }
+  
+    
+    .healthIndexCol{
+      width:20%; 
+    }
+  }
+
+ /* .example-container {
+    display:flex;
+    flex-direction:column;
+    max-height:500px;
+    min-width:300px;
+  }
+
+  .cdk-table{
+    overflow:auto;
+    max-height:500px;
+  }*/

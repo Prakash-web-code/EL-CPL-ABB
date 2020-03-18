@@ -1,0 +1,196 @@
+.abb-logo-image{
+    max-width :100%;
+    margin-left: 10px;     
+}
+
+.navbar-text{
+    float: right;
+}
+
+
+.container{
+    background-color: white;
+    display:flex;
+    flex-direction: row;   
+    // flex-direction: column;
+        flex-wrap: wrap;
+    min-height: 50px; 
+}
+
+.user-account-detail{
+   justify-content: flex-end;
+}
+
+.plant-list-drop-down{
+    //min-width :100%;  
+  //height: 100%;
+  font-size: 12px;;
+}
+.nav-icons {    
+    width: 16px;
+    height: 16px;    
+    margin-right: 4px;
+}
+
+.plant-list-div{
+    top: 20px;  
+    //left: 186px;
+    // width: 600px;
+    min-height: 50px;
+    
+    //background: #FFFFFF 0% 0% no-repeat padding-box;
+    // border-left: 1px solid #e1e4e8;  
+    // border-right: 1px solid #e1e4e8;
+    //background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+   // margin-left: 15px;
+
+   .plant-list-drop-down{
+    //min-width :100%;  
+  //height: 100%;
+  font-size: 12px;;
+}
+}
+
+
+.icons {
+    color: #e9e3e3;
+    margin-left: 20px;
+    opacity: 60%;
+}
+
+.vl {
+    border-left: 3px solid black;
+    // height: 500px;
+  }
+.plant-list-plant-name{
+top: 28px;
+left: 237px;
+// max-width: 154px;
+// max-height: 16px;
+text-align: left;
+font: Medium 16px/23px ABBvoice;
+letter-spacing: 0;
+color: #1F1F1F;
+opacity: 1;
+}
+
+
+.plant-list-plant-sub-name{
+// top: 49px;
+left: 237px;
+width: 292px;
+height: 14px;
+text-align: left;
+font: Regular 13px/20px ABBvoice;
+// letter-spacing: 0;
+color: #1F1F1F;
+// opacity: 1;
+
+}
+
+.text-overflow-design{
+ overflow: hidden;
+ text-overflow: ellipsis;
+ white-space: nowrap;
+ font-size: 10px;
+ max-width: 200px;
+}
+
+.dashboard-div-margin{
+    height: 14px;
+    background-color: white;
+ 
+}
+
+.border-margin-design{
+//   border-left: 0.5px solid #e1e4e8;
+//   border-right: 0.5px solid #e1e4e8;
+}
+.container{
+    background-color: white;
+    flex: 1;
+    display: flex;
+    overflow: auto;
+}
+.header-home-icon {
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+.icon-style {
+ color: grey;
+}
+.header-roles {
+    opacity: 0.5;
+    padding-left: 20px;
+}
+.role {
+    padding-right: 15px;
+}
+.header-icons {
+    margin: -10px;
+    padding-right: 10px;
+    opacity: 0.5;
+}
+
+.last-icon {
+    margin: -10px;
+    padding-right: 30px;
+    opacity: 0.5;
+}
+.logged-user {
+    font-family: 'ABBvoice Helvetica';
+    font-weight: bold;
+    font-size: 12px;
+    color: black;
+}
+[data-letters]:before {
+    content:attr(data-letters);
+    display:inline-block;
+    font-size:1em;
+    width:2em;
+    height:2em;
+    line-height:2em;
+    text-align:center;
+    border-radius:50%;
+    background:#99ccff;
+    vertical-align:middle;
+    margin-right:1em;
+    color:white;
+}
+// a {
+//     color: black;
+// }
+
+.vertical-border{
+    border-right: 1.5px solid #e1e4e8;
+    min-height: 50px;
+    padding-left: 20px;    
+}
+
+
+.user-name-space{
+    padding-right: 5px;
+}
+
+@media screen and (max-width: 425px) {
+    .plant-font-size {
+      font-size:6px;
+    }
+    .plant-icon-size{
+        size:5px;
+    }
+    .userinfo{
+        font-size:10px;        
+    }
+  }
+
+  ::ng-deep .dialog-style .mat-dialog-container {
+    padding: 0px !important; 
+    width: 80% !important;
+    height: 85% !important;
+    overflow: hidden;
+}
+
+

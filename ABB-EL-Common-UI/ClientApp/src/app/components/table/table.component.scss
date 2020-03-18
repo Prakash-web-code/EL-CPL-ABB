@@ -1,0 +1,82 @@
+@import '../../components/styles/fonts/all';
+    
+    table {
+    width: 100%;
+    }
+
+
+    td.mat-cell:first-of-type, td.mat-footer-cell:first-of-type, th.mat-header-cell:first-of-type {
+        padding-left: 0px !important;
+    }  
+    td.mat-cell:last-of-type {
+        padding-right: 0px !important;
+        text-align: right;
+    }
+    td.mat-cell {
+        text-align: end;
+    }
+
+    th.mat-header-cell .first {
+        justify-content: left;
+    }
+
+    .mat-sort-header-container .first {
+        float: right;
+    }
+
+    .ellipsis-cell {
+        padding-right: 15px;
+        white-space: nowrap ;
+        max-width: 100px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+
+
+    .table-container {
+        ::ng-deep {
+            .mat-cell {
+                @include abb-table-body;
+              }
+          
+              .mat-header-cell {
+                @include widget-table-header;
+              }
+          
+              tr.mat-footer-row,
+              tr.mat-row {
+                height: 36px !important;
+              }
+          
+              tr.mat-header-row {
+                height: 42px !important;
+              }
+          
+              td.mat-cell:first-of-type {
+                padding-left: 1px !important;
+                text-align: left;
+              }
+            
+          
+          
+          td.mat-cell:first-of-type,
+          td.mat-footer-cell:first-of-type,
+          th.mat-header-cell:first-of-type {
+            padding-left: 0px !important;
+          }
+          
+          td.mat-cell:last-of-type {
+            padding-right: 0px !important;
+            text-align: right;
+          }
+          
+          td.mat-cell {
+            text-align: end;
+          }
+          
+        }
+    }
+   
+      
+   

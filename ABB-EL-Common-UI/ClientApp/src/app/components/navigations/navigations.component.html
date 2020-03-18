@@ -1,0 +1,97 @@
+<!-- <div style="height: 80vh;"> -->
+<div fxFlex>
+  <mat-toolbar class="dashboard-menu-bar" *ngIf="showMenu">
+    <mat-toolbar-row>
+      <button mat-icon-button (click)="sidenav.toggle()" fxShow="true" fxHide.gt-sm>
+        <mat-icon>menu</mat-icon>
+      </button>
+
+
+      <div fxShow="true" fxHide.lt-md>
+        <!-- The following menu items will be hidden on both SM and XS screen sizes -->
+        <a mat-button  (click)="navigationTo('')" class="menu-ripple" (click)="change('dashboardActive')" [ngStyle] = "{'background-color':dashboardActive?'lightblue':null}">
+          <img class="nav-icons" src="assets/ABB UI Icon Package/SVG/dashoard.svg">
+          <span class="nav-list-name">Dashboard</span></a>
+        <a mat-button [matMenuTriggerFor]="asset" [ngStyle] = "{'background-color':assetsActive?'lightblue':null}" #menuTrigger="matMenuTrigger">
+          <img class="nav-icons" src="../../../../../../assets/ABB UI Icon Package/PNG/16x16/abb_server_16.png">
+          <span class="nav-list-name">Assets</span></a>
+        <mat-menu #asset="matMenu">
+          <button mat-menu-item (click)="navigationTo('/assetpage/allAssets')" (click)="change('assetsActive')">All assets</button>
+          <button mat-menu-item>Connectivity</button>
+          <button mat-menu-item>Site trees</button>
+          <button mat-menu-item>Visuals</button>
+          <button mat-menu-item>Single line diagrams</button>
+
+        </mat-menu>
+
+
+        
+
+        <a href="#" mat-button>
+          <img class="nav-icons" src="/assets/ABB UI Icon Package/PNG/16x16/abb_bar-chart_16.png">
+          <span class="nav-list-name">Data Analysis</span></a>
+        <a href="#" mat-button>
+          <img class="nav-icons" src="/assets/ABB UI Icon Package/PNG/16x16/abb_wrench_16.png">
+          <span class="nav-list-name">Maintenance</span></a>
+        <a href="#" mat-button>
+          <img class="nav-icons" src="/assets/ABB UI Icon Package/PNG/16x16/abb_broadcast_16.png">
+          <span class="nav-list-name">Events</span></a>
+        <a href="#" mat-button>
+          <img class="nav-icons" src="/assets/ABB UI Icon Package/PNG/16x16/abb_advanced-settings_16.png">
+          <span class="nav-list-name">Settings</span></a>
+      </div>
+
+
+    </mat-toolbar-row>
+    <!-- <mat-toolbar-row>
+      <span>Custom Toolbar</span>
+    </mat-toolbar-row> -->
+  </mat-toolbar>
+
+  <div fxShow="true" style="height: auto; min-height: 80vh;">
+    <mat-sidenav-container fxFlexFill>
+
+      <mat-sidenav #sidenav style="height: 80vh;" fxHide.gt-sm="true">
+
+        <mat-nav-list>
+
+          <!-- <a  href="" mat-list-item (click)="sidenav.toggle()">Close</a> -->
+          <a routerLink='/' mat-list-item> <img class="nav-icons"
+              src="assets/ABB UI Icon Package/SVG/dashoard.svg">
+              <span class="nav-list-name">Dashboard</span></a>
+          <!--<a  mat-list-item [matMenuTriggerFor]="asset"><img class="nav-icons"
+              src="../../../../../../assets/ABB UI Icon Package/PNG/16x16/abb_server_16.png">
+              <span class="nav-list-name">Assets</span></a>
+
+          <mat-menu #asset="matMenu">
+            <button mat-menu-item (click)="navigationTo('/assetpage/allAssets')">All assets</button>
+            <button mat-menu-item>Connectivity</button>
+            <button mat-menu-item>Site trees</button>
+            <button mat-menu-item>Visuals</button>
+            <button mat-menu-item>Single line diagram</button>
+
+          </mat-menu>-->
+
+          <a routerLink="/about" mat-list-item><img class="nav-icons"
+            src="/assets/ABB UI Icon Package/PNG/16x16/abb_bar-chart_16.png">
+            <span class="nav-list-name">Data Analysis</span></a>
+        <a href="#" mat-list-item><img class="nav-icons"
+            src="/assets/ABB UI Icon Package/PNG/16x16/abb_wrench_16.png">
+            <span class="nav-list-name">Maintenance</span></a>
+        <a href="#" mat-list-item><img class="nav-icons"
+            src="/assets/ABB UI Icon Package/PNG/16x16/abb_broadcast_16.png">
+            <span class="nav-list-name">Events</span></a>
+        <a href="#" mat-list-item><img class="nav-icons"
+            src="/assets/ABB UI Icon Package/PNG/16x16/abb_advanced-settings_16.png">
+            <span class="nav-list-name">Settings</span></a>
+        </mat-nav-list>
+      </mat-sidenav>
+      <mat-sidenav-content fxFlexFill class="content-background">
+        <div class="container">
+          <router-outlet></router-outlet>
+      </div>
+      </mat-sidenav-content>
+    </mat-sidenav-container>
+  </div>
+ 
+</div>

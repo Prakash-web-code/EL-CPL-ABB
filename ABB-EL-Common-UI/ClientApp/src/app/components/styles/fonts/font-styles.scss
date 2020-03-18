@@ -1,0 +1,31 @@
+// Import mixins
+@import 'font-styles.mixins';
+
+
+.widget-title {
+    @include widget-title;
+}
+.widget-select-title {
+    @include widget-select-title;
+}
+.widget-select-title {
+    @include widget-select-title;
+}
+.abb-all-btn {
+    @include abb-all-btn;
+}
+.widget-table-header {
+    @include widget-table-header;
+}
+.abb-table-body {
+    @include abb-table-body;
+}
+
+.abb-tab-title {
+    @include abb-tab-title;
+}
+.pagination-label {
+    @include pagination-label;
+}
+
+

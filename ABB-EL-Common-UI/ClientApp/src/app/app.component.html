@@ -1,0 +1,11 @@
+<!-- <elcp-header  *ngIf="this.isAuthenticated"></elcp-header>
+<elcp-navigations *ngIf="this.isAuthenticated"></elcp-navigations>
+<div class="container">
+    <router-outlet></router-outlet>
+</div>
+<elcp-footer *ngIf="this.isAuthenticated"></elcp-footer> -->
+
+
+<elcp-header [showPlantslist] = 'showComp' *ngIf="this.isAuthenticated"></elcp-header>
+<elcp-navigations [showMenu] = 'showComp'></elcp-navigations>
+<elcp-footer ></elcp-footer>

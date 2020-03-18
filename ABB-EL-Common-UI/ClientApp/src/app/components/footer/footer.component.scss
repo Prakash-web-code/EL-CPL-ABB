@@ -1,0 +1,18 @@
+@import '_variables';
+
+.page-footer{
+    text-align: left; 
+    color: #9F9F9F;
+    margin:0px 0px;
+    background-color: $background-color ;
+    padding-bottom: 20px;
+    font-family: 'ABBvoice-Rg';
+    font-size: 11px/16px;
+    justify-content: center;   
+}
+.padding-copy-right{
+    padding-right: 20px;
+}
+a {
+    color: inherit;
+ }
